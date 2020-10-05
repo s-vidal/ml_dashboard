@@ -7,7 +7,6 @@ const DashBoard = () => {
     const dataset = dataHandler.getdataset(1);
     console.log(dataset);
     const features = dataHandler.getFeaturesAndTargetNames();
-    console.log(features);
   }, []);
 
   return <div>DashBoard</div>;

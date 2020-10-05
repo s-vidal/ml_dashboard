@@ -1,0 +1,5 @@
+class CounterFactuals {
+  constructor() {
+    pass;
+  }
+}

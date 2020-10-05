@@ -462,7 +462,7 @@ export const returnDataset = (datasetNumber) => {
   else {
     if (datasetNumber === 1) {
       return JSON.stringify(datasetOne);
-    } else if (datasetNumber === 2) {
+    } else if (datasetNumber == 2) {
       return JSON.stringify(datasetTwo);
     }
   }

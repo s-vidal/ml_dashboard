@@ -1,4 +1,4 @@
-import {returnDataset} from "./fakeApi";
+import returnDataset from "./fakeApi";
 
 export const getDataset = (datsetNumber) => {
   const data = returnDataset(datsetNumber);

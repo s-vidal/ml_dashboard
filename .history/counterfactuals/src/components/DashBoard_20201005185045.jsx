@@ -4,10 +4,7 @@ import DataHandler from "../lib/DataHandler";
 const DashBoard = () => {
   useEffect(() => {
     const dataHandler = new DataHandler();
-    const dataset = dataHandler.getdataset(1);
-    console.log(dataset);
-    const features = dataHandler.getFeaturesAndTargetNames();
-    console.log(features);
+    dataset = dataHandler.getdataset(1);
   }, []);
 
   return <div>DashBoard</div>;
