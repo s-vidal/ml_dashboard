@@ -3,11 +3,7 @@ import "./App.css";
 import DashBoard from "./components/DashBoard";
 
 function App() {
-  return (
-    <div className="">
-      <DashBoard />
-    </div>
-  );
+  return <div className="container"></div>;
 }
 
 export default App;
