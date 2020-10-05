@@ -1,0 +1,13 @@
+.dashboard {
+  min-height: 90vh;
+  min-width: 100%;
+  background-color: rgb(233, 233, 233);
+  border-radius: 30px;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  border-radius: 180px;
+  background-color: rgb(155, 155, 155);
+}

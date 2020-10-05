@@ -1,0 +1,6 @@
+.dashboard {
+  min-height: 90vh;
+  min-width: 100%;
+  background-color: rgb(202, 202, 202);
+  border-radius: 30px;
+}
