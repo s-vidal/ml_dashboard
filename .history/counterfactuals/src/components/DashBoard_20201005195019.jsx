@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
 import DataHandler from "../lib/DataHandler";
-import "./DashBoard.css";
 
 const DashBoard = () => {
   useEffect(() => {
     const dataHandler = new DataHandler();
-    // const dataset = dataHandler.getdataset(1);
+    const dataset = dataHandler.getdataset(1);
     const featuresAndTagName = dataHandler.getFeaturesAndTargetNames();
+
     const graph = dataHandler.getGraph();
     const sample = dataHandler.getSample();
     console.log(featuresAndTagName);
@@ -14,7 +14,7 @@ const DashBoard = () => {
     console.log(graph);
   }, []);
 
-  return <div className="dashboard"></div>;
+  return <div>DashBoard</div>;
 };
 
 export default DashBoard;

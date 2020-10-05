@@ -21,9 +21,7 @@ class DataHandler {
   getGraph = () => {
     return this.dataset;
   };
-  getSample = () => {
-    return this.dataset["sample"];
-  };
+  
 }
 
 export default DataHandler;

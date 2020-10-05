@@ -19,10 +19,8 @@ class DataHandler {
     }
   };
   getGraph = () => {
+    console.log(this.dataset);
     return this.dataset;
-  };
-  getSample = () => {
-    return this.dataset["sample"];
   };
 }
 

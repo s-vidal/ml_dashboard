@@ -12,17 +12,15 @@ class DataHandler {
   getFeaturesAndTargetNames = () => {
     if ("sample" in this.dataset) {
       const sample = this.dataset["sample"];
+      console.log(sample[0]);
       const keys = Object.keys(sample[0]);
       const targetname = keys.pop();
       const featuresNames = keys;
       return {targetname, featuresNames};
     }
-  };
-  getGraph = () => {
-    return this.dataset;
-  };
-  getSample = () => {
-    return this.dataset["sample"];
+    getGraph = () => {
+      this.dataset
+    };
   };
 }
 

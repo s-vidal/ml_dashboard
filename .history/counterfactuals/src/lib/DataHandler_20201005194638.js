@@ -17,12 +17,9 @@ class DataHandler {
       const featuresNames = keys;
       return {targetname, featuresNames};
     }
-  };
-  getGraph = () => {
-    return this.dataset;
-  };
-  getSample = () => {
-    return this.dataset["sample"];
+    getGraph = () => {
+      console.log(this.dataset);
+    };
   };
 }
 

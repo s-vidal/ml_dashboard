@@ -22,7 +22,7 @@ class DataHandler {
     return this.dataset;
   };
   getSample = () => {
-    return this.dataset["sample"];
+    return this.dataset
   };
 }
 

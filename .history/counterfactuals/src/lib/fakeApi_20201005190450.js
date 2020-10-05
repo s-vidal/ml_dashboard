@@ -8,7 +8,7 @@ const datasetOne = {
       "se:events-0_event_type=holiday_31": 0.0,
       "time:day_of_week": 1.0,
       "time:month": 6.0,
-      income: "200k",
+      "target": 200k,
     },
   ],
   neightbors: [

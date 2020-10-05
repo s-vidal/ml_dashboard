@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 import DataHandler from "../lib/DataHandler";
-import "./DashBoard.css";
 
 const DashBoard = () => {
   useEffect(() => {
