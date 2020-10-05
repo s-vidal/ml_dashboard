@@ -1,10 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import DataHandler from "../lib/DataHandler";
 import "./DashBoard.css";
-import Dropdown from "./Dropdown";
 
 const DashBoard = () => {
-  const [datasetNames, setDatasetNames] = useState([]);
   useEffect(() => {
     const dataHandler = new DataHandler();
     // const dataset = dataHandler.getDataset(1);
@@ -12,7 +10,6 @@ const DashBoard = () => {
     const graph = dataHandler.getGraph();
     const sample = dataHandler.getSample();
     const datasetNames = dataHandler.getDataSetNames();
-    setDatasetNames(datasetNames);
     console.log(datasetNames);
     console.log(featuresAndTagName);
     console.log(sample);
@@ -27,20 +24,7 @@ const DashBoard = () => {
         </div>
       </div>
       <div className="row d-flex justify-content-center">
-        <h1 className="text-secondary mb-5 mt-3">Counterfactuals</h1>
-      </div>
-      <div className="row mt-5">
-        <div className="offset-1">
-          {datasetNames && (
-            <Dropdown
-              title="Select Dataset"
-              items={datasetNames}
-              setItem={(item) => {
-                console.log(item);
-              }}
-            />
-          )}
-        </div>
+        <h1>Counterfactuals</h1>
       </div>
     </div>
   );

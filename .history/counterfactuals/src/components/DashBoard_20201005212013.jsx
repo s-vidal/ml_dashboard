@@ -27,13 +27,13 @@ const DashBoard = () => {
         </div>
       </div>
       <div className="row d-flex justify-content-center">
-        <h1 className="text-secondary mb-5 mt-3">Counterfactuals</h1>
+        <h1 className="text-secondary">Counterfactuals</h1>
       </div>
-      <div className="row mt-5">
-        <div className="offset-1">
+      <div className="row mt-4">
+        <div className="offset-2">
           {datasetNames && (
             <Dropdown
-              title="Select Dataset"
+              title="datasets"
               items={datasetNames}
               setItem={(item) => {
                 console.log(item);

@@ -27,20 +27,19 @@ const DashBoard = () => {
         </div>
       </div>
       <div className="row d-flex justify-content-center">
-        <h1 className="text-secondary mb-5 mt-3">Counterfactuals</h1>
+        <h1 className="text-secondary">Counterfactuals</h1>
       </div>
-      <div className="row mt-5">
-        <div className="offset-1">
-          {datasetNames && (
-            <Dropdown
-              title="Select Dataset"
-              items={datasetNames}
-              setItem={(item) => {
-                console.log(item);
-              }}
-            />
-          )}
-        </div>
+      <div className="row">
+        <div className="col-2"></div>
+        {datasetNames && (
+          <Dropdown
+            title="datasets"
+            items={datasetNames}
+            setItem={(item) => {
+              console.log(item);
+            }}
+          />
+        )}
       </div>
     </div>
   );
