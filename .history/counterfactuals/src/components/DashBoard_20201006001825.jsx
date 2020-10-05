@@ -7,10 +7,9 @@ import SampleSection from "./SampleSection";
 const DashBoard = () => {
   const [datasetNames, setDatasetNames] = useState([]);
   const [sampleData, setSampleData] = useState();
-  const [datasetNr, setdataSetNr] = useState(1);
 
   useEffect(() => {
-    const dataHandler = new DataHandler(datasetNr);
+    const dataHandler = new DataHandler(1);
     // const dataset = dataHandler.getDataset(1);
     const featuresAndTagName = dataHandler.getFeaturesAndTargetNames();
     const graph = dataHandler.getGraph();
@@ -21,19 +20,17 @@ const DashBoard = () => {
     console.log(datasetNames);
     console.log(featuresAndTagName);
     console.log(graph);
-  }, [datasetNr]);
+  }, []);
 
   return (
     <div className=" container dashboard">
       <div className="">
         <div className="d-flex flex-row-reverse">
-          <div className="close mr-3 mt-3 d-flex justify-content-center">
-            <h5 className="mt-1">✕</h5>
-          </div>
+          <div className="close mr-3 mt-3"></div>
         </div>
       </div>
       <div className="row">
-        <h3 className="offset-1 mb-3 mt-3 text-secondary">Counterfactuals</h3>
+        <h3 className="offset-1 mb-5 mt-3">Counterfactuals</h3>
       </div>
       <div className="row mt-5">
         <div className="offset-1">
@@ -41,8 +38,8 @@ const DashBoard = () => {
             <Dropdown
               title="Select Dataset"
               items={datasetNames}
-              setItem={(nr) => {
-                setdataSetNr(nr);
+              setItem={(item) => {
+                console.log(item);
               }}
             />
           )}
@@ -50,7 +47,7 @@ const DashBoard = () => {
       </div>
       {sampleData && (
         <div className="row d-flex justify-content-center">
-          <div className="col-10 mt-5 p-0">
+          <div className="col-10 mt-5">
             <SampleSection sampleData={sampleData} />
           </div>
         </div>

@@ -7,10 +7,10 @@ import SampleSection from "./SampleSection";
 const DashBoard = () => {
   const [datasetNames, setDatasetNames] = useState([]);
   const [sampleData, setSampleData] = useState();
-  const [datasetNr, setdataSetNr] = useState(1);
+  const [dataSet]
 
   useEffect(() => {
-    const dataHandler = new DataHandler(datasetNr);
+    const dataHandler = new DataHandler(2);
     // const dataset = dataHandler.getDataset(1);
     const featuresAndTagName = dataHandler.getFeaturesAndTargetNames();
     const graph = dataHandler.getGraph();
@@ -21,7 +21,7 @@ const DashBoard = () => {
     console.log(datasetNames);
     console.log(featuresAndTagName);
     console.log(graph);
-  }, [datasetNr]);
+  }, []);
 
   return (
     <div className=" container dashboard">
@@ -41,8 +41,8 @@ const DashBoard = () => {
             <Dropdown
               title="Select Dataset"
               items={datasetNames}
-              setItem={(nr) => {
-                setdataSetNr(nr);
+              setItem={(item) => {
+                console.log(item);
               }}
             />
           )}

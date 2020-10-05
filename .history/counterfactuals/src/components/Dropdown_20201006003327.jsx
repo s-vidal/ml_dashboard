@@ -25,7 +25,7 @@ const Dropdown = ({title, items, setItem}) => {
               key={item}
               className="dropdown-item pointer"
               onClick={() => {
-                setItem(index + 1);
+                setItem(item);
               }}
             >
               {item}

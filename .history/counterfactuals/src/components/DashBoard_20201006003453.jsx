@@ -10,7 +10,7 @@ const DashBoard = () => {
   const [datasetNr, setdataSetNr] = useState(1);
 
   useEffect(() => {
-    const dataHandler = new DataHandler(datasetNr);
+    const dataHandler = new DataHandler(2);
     // const dataset = dataHandler.getDataset(1);
     const featuresAndTagName = dataHandler.getFeaturesAndTargetNames();
     const graph = dataHandler.getGraph();
@@ -21,7 +21,7 @@ const DashBoard = () => {
     console.log(datasetNames);
     console.log(featuresAndTagName);
     console.log(graph);
-  }, [datasetNr]);
+  }, []);
 
   return (
     <div className=" container dashboard">
@@ -41,8 +41,8 @@ const DashBoard = () => {
             <Dropdown
               title="Select Dataset"
               items={datasetNames}
-              setItem={(nr) => {
-                setdataSetNr(nr);
+              setItem={(item) => {
+                setdataSetNr
               }}
             />
           )}

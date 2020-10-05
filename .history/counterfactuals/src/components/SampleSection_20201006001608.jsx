@@ -5,8 +5,8 @@ const SampleSection = ({sampleData}) => {
   console.log(sampleData);
   return (
     <div className="container p-0">
-      <div className="row sample-container p-4 pl-5 pr-5 m-0">
-        <h5 className="mb-5">Sample Data</h5>
+      <div className="row sample-container p-4 pl-5">
+        <h5 className="mb-4">Sample Data</h5>
         <table className="table table-sm">
           <thead>
             <tr>
@@ -26,7 +26,7 @@ const SampleSection = ({sampleData}) => {
           </tbody>
         </table>
         {sampleData["target"].map((target, index) => (
-          <div className="row mt-3" key={index}>
+          <div className="row" key={index}>
             <h6 className="mr-3 pt-1 ml-3">Target</h6>
             <h6 className="pl-3 pr-2 p-1 target-key">
               {Object.keys(target)} :

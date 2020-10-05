@@ -5,7 +5,7 @@ const SampleSection = ({sampleData}) => {
   console.log(sampleData);
   return (
     <div className="container p-0">
-      <div className="row sample-container p-4 pl-5 pr-5 m-0">
+      <div className="row sample-container p-4">
         <h5 className="mb-5">Sample Data</h5>
         <table className="table table-sm">
           <thead>

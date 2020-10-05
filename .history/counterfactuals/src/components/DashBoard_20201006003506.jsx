@@ -21,7 +21,7 @@ const DashBoard = () => {
     console.log(datasetNames);
     console.log(featuresAndTagName);
     console.log(graph);
-  }, [datasetNr]);
+  }, []);
 
   return (
     <div className=" container dashboard">
