@@ -6,7 +6,7 @@ const Dropdown = ({title, items, setItem}) => {
     <div>
       <div className="dropdown show">
         <button
-          className="btn dropdown-toggle custom-dropdown"
+          className="btn btn-outline-secondary dropdown-toggle custom-dropdown"
           type="button"
           id="dropdownMenuLink"
           data-toggle="dropdown"

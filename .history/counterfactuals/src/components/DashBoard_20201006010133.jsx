@@ -3,7 +3,6 @@ import DataHandler from "../lib/DataHandler";
 import "./DashBoard.css";
 import Dropdown from "./Dropdown";
 import SampleSection from "./SampleSection";
-import PermutationGraph from "./PermutationGraph";
 
 const DashBoard = () => {
   const [datasetNames, setDatasetNames] = useState([]);
@@ -25,7 +24,7 @@ const DashBoard = () => {
   }, [datasetNr]);
 
   return (
-    <div className="container dashboard pb-5 mb-5">
+    <div className="container dashboard">
       <div className="">
         <div className="d-flex flex-row-reverse">
           <div className="close mr-2 mt-4 d-flex justify-content-center">
@@ -56,11 +55,6 @@ const DashBoard = () => {
           </div>
         </div>
       )}
-      <div className="row mt-3 d-flex justify-content-center mb-5">
-        <div className="col-10 mt-5 p-0">
-          <PermutationGraph />
-        </div>
-      </div>
     </div>
   );
 };

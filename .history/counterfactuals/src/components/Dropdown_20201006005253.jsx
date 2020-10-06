@@ -13,7 +13,7 @@ const Dropdown = ({title, items, setItem}) => {
           aria-haspopup="true"
           aria-expanded="false"
         >
-          <span className="pl-3 pr-3">{title}</span>
+          <span className="pl-3 pr-3 text-white">{title}</span>
         </button>
 
         <div

@@ -25,7 +25,7 @@ const DashBoard = () => {
   }, [datasetNr]);
 
   return (
-    <div className="container dashboard pb-5 mb-5">
+    <div className="container dashboard pb-5">
       <div className="">
         <div className="d-flex flex-row-reverse">
           <div className="close mr-2 mt-4 d-flex justify-content-center">
