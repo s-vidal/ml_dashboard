@@ -26,8 +26,8 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
   };
 
   return (
-    <div className="container permutation-container pb-5">
-      <div className="row p-5 m-0">
+    <div className="container permutation-container">
+      <div className="row pt-5 pl-5 pr-5 m-0">
         <h5 className="mb-4">Feature Permutation</h5>
       </div>
       <div className="row">
@@ -65,7 +65,7 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
           </span>
         ))}
       </div>
-      <div className="row graph-div pl-3 pr-3  ml-3 mr-3 mb-3">
+      <div className="row graph-div pl-3 pr-3 pb-3 ml-3">
         {graphData && (
           <ResponsiveBarGraph
             data={graphData}

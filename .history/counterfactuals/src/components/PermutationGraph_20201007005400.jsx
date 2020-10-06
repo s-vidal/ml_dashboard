@@ -26,8 +26,8 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
   };
 
   return (
-    <div className="container permutation-container pb-5">
-      <div className="row p-5 m-0">
+    <div className="container permutation-container">
+      <div className="row p">
         <h5 className="mb-4">Feature Permutation</h5>
       </div>
       <div className="row">

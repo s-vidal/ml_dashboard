@@ -27,9 +27,8 @@ input[type="checkbox"]:checked {
 }
 
 .graph-div {
-  height: 800px;
+  height: 700px;
 }
-
 p {
   font-size: 14px;
 }
