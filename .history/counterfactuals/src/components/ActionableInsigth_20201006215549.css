@@ -1,0 +1,9 @@
+.insights-container {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 7px rgba(204, 204, 204, 0.411);
+}
+
+.btn-link
