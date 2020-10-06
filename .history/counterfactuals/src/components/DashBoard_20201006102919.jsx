@@ -27,14 +27,13 @@ const DashBoard = () => {
   }, [datasetNr]);
 
   const onFeatureClick = (feature) => {
+    const checkedFeatures = checkedFeatures;
     const index = checkedFeatures.indexOf(feature);
     if (index > -1) {
       checkedFeatures.splice(index, 1);
     } else {
       checkedFeatures.push(feature);
     }
-    setCheckedfeatures(checkedFeatures);
-    console.log(checkedFeatures);
   };
 
   return (

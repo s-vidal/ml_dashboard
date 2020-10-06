@@ -27,7 +27,7 @@ const SampleSection = ({sampleData}) => {
         </table>
         {sampleData["target"].map((target, index) => (
           <div className="row mt-3" key={index}>
-            <h6 className="mr-3 pt-1 ml-3">Outcome</h6>
+            <h6 className="mr-3 pt-1 ml-3">Result</h6>
             <h6 className="pl-3 pr-2 p-1 target-key">
               {Object.keys(target)} :
             </h6>

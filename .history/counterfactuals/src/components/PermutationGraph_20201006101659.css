@@ -16,12 +16,11 @@ input[type="checkbox"] {
   cursor: pointer;
   outline: none;
 }
-
-input[type="checkbox"]:checked {
-  background-color: rgba(73, 112, 219, 0.767);
+.checkbox input[type="checkbox"]:focus + label::before {
   outline: none;
 }
 
-.checkbox-bg {
-  background-color: rgb(255, 255, 255);
+input[type="checkbox"]:checked {
+  background: rgb(81, 130, 228);
+  outline: none;
 }

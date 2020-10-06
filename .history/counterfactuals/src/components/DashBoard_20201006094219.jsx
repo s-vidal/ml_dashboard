@@ -9,33 +9,21 @@ const DashBoard = () => {
   const [datasetNames, setDatasetNames] = useState([]);
   const [sampleData, setSampleData] = useState();
   const [datasetNr, setdataSetNr] = useState(1);
-  const [featureNames, setFeatureNames] = useState();
-  const [checkedFeatures, setCheckedfeatures] = useState([]);
+  const []
 
   useEffect(() => {
     const dataHandler = new DataHandler(datasetNr);
     // const dataset = dataHandler.getDataset(1);
     const featuresAndTagName = dataHandler.getFeaturesAndTargetNames();
-    setFeatureNames(featuresAndTagName);
     const graph = dataHandler.getGraph();
     const sample = dataHandler.getSample();
     setSampleData(sample);
     const datasetNames = dataHandler.getDataSetNames();
     setDatasetNames(datasetNames);
     console.log(datasetNames);
+    console.log(featuresAndTagName);
     console.log(graph);
   }, [datasetNr]);
-
-  const onFeatureClick = (feature) => {
-    const index = checkedFeatures.indexOf(feature);
-    if (index > -1) {
-      checkedFeatures.splice(index, 1);
-    } else {
-      checkedFeatures.push(feature);
-    }
-    setCheckedfeatures(checkedFeatures);
-    console.log(checkedFeatures);
-  };
 
   return (
     <div className="container dashboard pb-5 mb-5">
@@ -71,12 +59,7 @@ const DashBoard = () => {
       )}
       <div className="row mt-3 d-flex justify-content-center mb-5">
         <div className="col-10 mt-5 p-0">
-          {featureNames && (
-            <PermutationGraph
-              featureNames={featureNames}
-              onFeatureClick={onFeatureClick}
-            />
-          )}
+          <PermutationGraph />
         </div>
       </div>
     </div>

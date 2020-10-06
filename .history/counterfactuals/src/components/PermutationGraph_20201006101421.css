@@ -13,15 +13,8 @@ input[type="checkbox"] {
   background: white;
   border-radius: 5px;
   border: 2px solid #555;
-  cursor: pointer;
-  outline: none;
+  cursor pointer
 }
-
 input[type="checkbox"]:checked {
-  background-color: rgba(73, 112, 219, 0.767);
-  outline: none;
-}
-
-.checkbox-bg {
-  background-color: rgb(255, 255, 255);
+  background: rgb(81, 130, 228);
 }

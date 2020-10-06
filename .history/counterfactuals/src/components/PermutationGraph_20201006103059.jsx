@@ -10,7 +10,7 @@ const PermutationGraph = ({featureNames, onFeatureClick}) => {
       </div>
       <div className="row d-flex justify-content-center checkbox-bg">
         {featureNames["featuresNames"].map((feature, index) => (
-          <span key={index} className="pt-3 pl-3 pr-3">
+          <span key={index} className="p-3 pb-1">
             <input
               type="checkbox"
               id={feature}

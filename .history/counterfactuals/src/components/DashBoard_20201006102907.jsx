@@ -33,8 +33,6 @@ const DashBoard = () => {
     } else {
       checkedFeatures.push(feature);
     }
-    setCheckedfeatures(checkedFeatures);
-    console.log(checkedFeatures);
   };
 
   return (

@@ -26,16 +26,7 @@ const DashBoard = () => {
     console.log(graph);
   }, [datasetNr]);
 
-  const onFeatureClick = (feature) => {
-    const index = checkedFeatures.indexOf(feature);
-    if (index > -1) {
-      checkedFeatures.splice(index, 1);
-    } else {
-      checkedFeatures.push(feature);
-    }
-    setCheckedfeatures(checkedFeatures);
-    console.log(checkedFeatures);
-  };
+  onFeatureClick = (feature) => {};
 
   return (
     <div className="container dashboard pb-5 mb-5">

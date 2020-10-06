@@ -18,10 +18,10 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: rgba(73, 112, 219, 0.767);
+  background: rgb(81, 130, 228);
   outline: none;
 }
 
 .checkbox-bg {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(228, 228, 228);
 }

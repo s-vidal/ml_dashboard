@@ -8,7 +8,7 @@ const PermutationGraph = ({featureNames, onFeatureClick}) => {
       <div className="row p-4 pl-5 pr-5 m-0">
         <h5 className="mb-5">Feature Permutation</h5>
       </div>
-      <div className="row d-flex justify-content-center checkbox-bg">
+      <div className="row d-flex justify-content-start checkbox-bg">
         {featureNames["featuresNames"].map((feature, index) => (
           <span key={index} className="pt-3 pl-3 pr-3">
             <input
