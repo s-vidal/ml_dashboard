@@ -31,7 +31,7 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
         <h5 className="mb-4">Feature Permutation</h5>
       </div>
       <div className="row">
-        <div className="ml-5 col-9">
+        <div className="ml-5 col-9 mb-5">
           <p className="text-secondary">
             The values for each feature represents the precentage increase or
             decrease which is required to achieve the precentage change in the
@@ -39,12 +39,11 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
           </p>
         </div>
       </div>
-      <div className="row mb-4">
-        <div className="ml-5 pl-3">
-          <p className="text-secondary">
-            The striped area represents the effect on target value in percent,
-            if change is larger than 0.
-          </p>
+      <div className="row d-flex justify-content-center">
+        <div className="col-10 text-center">
+          <h6 className="text-secondary">
+            striped area if % change is larger than 0.
+          </h6>
         </div>
       </div>
       <div className="row d-flex justify-content-center checkbox-bg">
