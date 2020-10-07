@@ -1,6 +1,6 @@
 # ml_dashboard
 
-### Web App Link:
+### Web App URL:
 
 > https://ml-dashboard-vidal.herokuapp.com/
 
