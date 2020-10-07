@@ -39,7 +39,14 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
           </p>
         </div>
       </div>
-
+      <div className="row mb-4">
+        <div className="ml-5 pl-3">
+          <p className="text-secondary">
+            The striped area represents the effect on target value in percent,
+            if change is larger than 0.
+          </p>
+        </div>
+      </div>
       <div className="row d-flex justify-content-center checkbox-bg">
         <h6 className="text-secondary pt-3">Select by feature:</h6>
         {featureNames["featuresNames"].map((feature, index) => (
@@ -66,14 +73,6 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
             featuresKeys={featureKeys}
           />
         )}
-      </div>
-      <div className="row mb-4 mt-5 ml-3">
-        <div className="ml-5 pl-3">
-          <p className="text-secondary">
-            The striped area represents the effect on target value in percent,
-            if change is higher than 0.
-          </p>
-        </div>
       </div>
     </div>
   );

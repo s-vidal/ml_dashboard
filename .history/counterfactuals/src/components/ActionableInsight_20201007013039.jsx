@@ -41,7 +41,7 @@ const ActionableInsigth = ({dataHandler}) => {
               </h6>
               <h4 className="mt-1">{bestPermutations[0][targetName]} %</h4>
             </div>
-            <div className="row pie-graph-div">
+            <div className="row graph-div">
               <PieChart data={bestPermutations[0]} targetName={targetName} />
             </div>
           </>

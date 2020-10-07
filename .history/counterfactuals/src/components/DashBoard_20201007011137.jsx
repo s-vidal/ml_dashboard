@@ -25,7 +25,7 @@ const DashBoard = () => {
   }, [datasetNr]);
 
   return (
-    <div className="container dashboard pb-5 mb-5 shadow">
+    <div className="container dashboard pb-5 mb-5">
       <div className="">
         <div className="d-flex flex-row-reverse">
           <div className="close mr-2 mt-4 d-flex justify-content-center">
@@ -36,7 +36,7 @@ const DashBoard = () => {
       <div className="row">
         <h3 className="offset-1 mt-3 text-secondary">Counterfactuals</h3>
         {datasetNames && (
-          <div className="mt-3 ml-5 pl-4">
+          <div className="mt-3 ml-5 pl-3">
             <Dropdown
               title="Select Dataset"
               items={datasetNames}

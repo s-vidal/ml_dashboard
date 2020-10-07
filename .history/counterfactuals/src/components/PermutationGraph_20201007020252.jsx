@@ -67,11 +67,11 @@ const PermutationGraph = ({featureNames, dataHandler}) => {
           />
         )}
       </div>
-      <div className="row mb-4 mt-5 ml-3">
+      <div className="row mb-4 mt-5 ml-5">
         <div className="ml-5 pl-3">
           <p className="text-secondary">
             The striped area represents the effect on target value in percent,
-            if change is higher than 0.
+            if change is larger than 0.
           </p>
         </div>
       </div>

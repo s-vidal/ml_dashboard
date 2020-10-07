@@ -3,8 +3,8 @@ import "./SampleSection.css";
 
 const SampleSection = ({sampleData}) => {
   return (
-    <div className="container p-0 mr-5">
-      <div className="sample-container p-4 pl-5 pr-5 m-0 pt-5 shadow">
+    <div className="container p-0 mr-5 shadow">
+      <div className="sample-container p-4 pl-5 pr-5 m-0 pt-5">
         <div className="row">
           <h5 className="mb-3 ml-3">Sample Data</h5>
         </div>
