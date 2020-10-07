@@ -1,7 +1,7 @@
 import {getDataset, getDatasetsNames} from "./apiRequests";
 
 class DataHandler {
-  constructor(datasetNumber = 1) {
+  constructor(datasetNumber = 2) {
     this.datasetNumber = datasetNumber;
     this.dataset = getDataset(this.datasetNumber);
   }

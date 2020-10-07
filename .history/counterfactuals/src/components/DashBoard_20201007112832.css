@@ -1,8 +1,7 @@
 .dashboard {
   min-height: 90vh;
-  /* min-width: 100%; */
-  min-width: 65vw;
-  padding: 0 50px 0 50px;
+  min-width: 100%;
+  min-width: ;
   background-color: rgba(240, 240, 240, 0.514);
   box-shadow: 4px 4px 9px #ccccccca;
   border-radius: 0 20px 20px 0;
