@@ -1,0 +1,12 @@
+.custom-dropdown {
+  border-radius: 10px;
+  box-shadow: 4px 4px 9px rgba(204, 204, 204, 0.794);
+  /* background-color: rgb(126, 126, 126); */
+  background-color: rgb(211, 211, 211);
+  outline-color: transparent !important;
+  outline-style: none !important;
+}
+
+.search-bar {
+  
+}

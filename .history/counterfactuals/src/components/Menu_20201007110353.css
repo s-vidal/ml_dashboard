@@ -1,0 +1,42 @@
+.menu {
+  background-color: rgb(240, 240, 240);
+  min-height: 200px;
+  min-width: 250px;
+  border-radius: 20px 0 0 20px;
+}
+
+.list-menu {
+  margin-top: 200px;
+  margin-left: 3rem;
+}
+
+.list-menu li {
+  margin-top: 50px;
+  cursor: pointer;
+}
+.list-menu p:hover {
+  color: rgb(111, 146, 228);
+  box
+}
+
+.list-menu p {
+  font-size: 14px;
+}
+
+.selected {
+  color: rgb(111, 146, 228);
+  font-size: 20px;
+}
+.selected p {
+  font-size: 18px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+}
+
+.initial {
+  display: initial !important;
+}
