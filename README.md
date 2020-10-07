@@ -2,7 +2,7 @@
 
 ### Web App URL:
 
-> https://ml-dashboard-vidal.herokuapp.com/
+> https://ml-dashboard-vidal-s.herokuapp.com/
 
 ### Steps to run the code:
 
